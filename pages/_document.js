@@ -4,7 +4,7 @@ export default function Document() {
   const meta = {
     title: 'Giga Chad',
     description: "Contact details, resume and portfolio",
-    image: 'https://i.ytimg.com/vi/TZudFcSE2ts/maxresdefault.jpg'
+    image: 'https://pbs.twimg.com/profile_images/1498658244180553737/MdpCfKWD_400x400.jpg'
   }
 
   return (
