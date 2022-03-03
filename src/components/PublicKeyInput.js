@@ -36,7 +36,7 @@ const PublicKeyInput = ({ nfts }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Enter a public key to see the NFTs in it:
+        Public key:
         <input
           style={{
             display: 'flex',

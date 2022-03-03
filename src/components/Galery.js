@@ -5,7 +5,7 @@ const Galery = ({ nfts }) => {
     return nfts.map((metadata, index) => {
       return (
         <div key={index}>
-          <img src={metadata?.image} alt="nft" width="200" />
+          <img src={metadata?.image} alt="nft" width="700" />
           {metadata?.name}
         </div>
       )

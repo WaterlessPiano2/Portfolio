@@ -6,6 +6,7 @@ const YourNFTs = () => {
   const [data, setData] = useState([])
   return (
     <>
+      
       <PublicKeyInput nfts={async (x) => setData(x)} />
       {data?.length ? <Galery nfts={data} /> : null}
     </>
