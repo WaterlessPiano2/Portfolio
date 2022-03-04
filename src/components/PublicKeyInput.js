@@ -3,12 +3,20 @@ import {
   resolveToWalletAddress,
   getParsedNftAccountsByOwner
 } from '@nfteyez/sol-rayz'
+import { useWallet } from '@solana/wallet-adapter-react'
 
 const PublicKeyInput = ({ nfts }) => {
   const [key, setKey] = React.useState(
     '489RFKuM1fpZuczdHV3qsPoJ2K4Nm6hYHdSzGSWuRn2q'
   )
   const [status, setStatus] = React.useState('IDLE')
+  const { publicKey } = useWallet()
+
+  React.useEffect(() => {
+    if (publicKey) setKey(publicKey.toBase58())
+  }, [publicKey])
+
+  console.log(publicKey)
 
   const handleSubmit = async (evt) => {
     setStatus('LOADING')

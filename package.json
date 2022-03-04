@@ -8,6 +8,11 @@
   },
   "dependencies": {
     "@nfteyez/sol-rayz": "^0.10.2",
+    "@solana/wallet-adapter-base": "^0.9.4",
+    "@solana/wallet-adapter-react": "^0.15.3",
+    "@solana/wallet-adapter-react-ui": "^0.9.5",
+    "@solana/wallet-adapter-wallets": "^0.15.5",
+    "@solana/web3.js": "^1.36.0",
     "gray-matter": "^4.0.2",
     "next": "12.0.8",
     "nextra": "^2.0.0-beta.5",
