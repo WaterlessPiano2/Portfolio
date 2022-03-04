@@ -63,3 +63,25 @@ img.next-image {
 .nav-line .nav-link {
   color: #69778c;
 }
+
+.submit {
+  padding: 8px;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  background-color: #69778c;
+  color: white;
+}
+
+.submit:focus {
+  background-color: #5678a8;
+  color: white;
+}
+
+.submit:disabled {
+  background-color: #d6dfeb;
+  color: white;
+}

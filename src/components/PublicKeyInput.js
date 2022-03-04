@@ -8,8 +8,10 @@ const PublicKeyInput = ({ nfts }) => {
   const [key, setKey] = React.useState(
     '489RFKuM1fpZuczdHV3qsPoJ2K4Nm6hYHdSzGSWuRn2q'
   )
+  const [status, setStatus] = React.useState('IDLE')
 
   const handleSubmit = async (evt) => {
+    setStatus('LOADING')
     evt.preventDefault()
     const publicAddress = await resolveToWalletAddress({
       text: key
@@ -18,6 +20,7 @@ const PublicKeyInput = ({ nfts }) => {
       publicAddress
     })
     const metadatas = await fetchMetadata(nftArray)
+    setStatus('IDLE')
     return nfts(metadatas)
   }
 
@@ -42,7 +45,7 @@ const PublicKeyInput = ({ nfts }) => {
             display: 'flex',
             padding: 8,
             border: '1px solid lightgrey',
-            width: 650,
+            width: '100%',
             borderRadius: 5
           }}
           type="text"
@@ -51,16 +54,12 @@ const PublicKeyInput = ({ nfts }) => {
         />
       </label>
       <input
+        disabled={status === 'LOADING'}
+        class="submit"
         type="submit"
         value="Submit"
-        style={{
-          display: 'flex',
-          padding: 8,
-          marginTop: 8,
-          border: '1px solid lightgrey',
-          borderRadius: 5
-        }}
       />
+      {status === 'LOADING' ? <span>Loading</span> : null}
     </form>
   )
 }
