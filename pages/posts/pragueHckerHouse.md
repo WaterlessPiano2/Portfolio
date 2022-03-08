@@ -26,20 +26,20 @@ There were a few other rooms like the bar, a foyer, lobby and smoking area, wher
 
 ## Development
 
-Speaking to many people in the event, I concluded that I should switch my attention from NFTs to Defi. My goal for the next few weeks is to learn what all the keywords mean and start making small investments to see how different methods work. 
+Speaking to many people in the event, I concluded that I should switch my attention from NFTs to Defi. For the next few weeks, my goal is to learn what all the keywords mean and start making small investments to see how different methods work. 
 
 Also, speaking to many teams of devs and investors, I realised a shortage of Solana backend developers. We need Rust language to create smart contracts in Solana. There is no shortage of javascript developers, as this is a widespread language. However, still, the demand is very high for them.
 
-I realised for the backend, I need to learn Rust with the Anchor framework. I have started learning this in the last 2 days of the hackathon.
+I realised that I need to learn Rust with the Anchor framework for the backend. I have started learning this in the last 2 days of the hackathon.
 
-For the front end, the most in-demand skills are React with NextJS with solana library for Javascript. To get familiar with the Solana libraries, I created the NFTs page on this website to learn more about how to fetch data from Solana chain and connect a wallet to my site. I have created this in the first 2 days of the hackathon.
+For the front end, the most in-demand skills are React with NextJS with Solana library for Javascript. To get familiar with the Solana libraries, I created the NFTs page on this website to learn more about how to fetch data from the Solana chain and connect a wallet to my site. I have made this in the first 2 days of the hackathon.
 
 One of the benefits of working here was that everyone uses the same tech stack. If I ever got stuck, I could always ask someone random next to me, and we could solve the issue together.  
  
 ## Networking
 
-This was a very special event for networking. Many like minded people who share a common interest were all under one roof. 
-Every one was very friendly and always happy to introduce them selves and talk about their projects.
+This was very special event for networking. Many like-minded people who share a common interest were all under one roof. 
+Everyone was very friendly and always happy to introduce themselves and talk about their projects.
 
 WIP
 
@@ -49,10 +49,10 @@ WIP
 
 ## Food and Drink
 
-One of the highlights of the week was the amazing food and drinks I got to consume. It was expecially good so we don't have to go out and hunt for food and spend more time building, networking and exchanging ideas. 
+One of the week's highlights was the fantastic food and drinks I got to consume. It was especially good so we didn't have to go out and hunt for food and spend more time building, networking and exchanging ideas. 
 
-There was a bar with unlimited soft drinks and caffeine all day and unlimited alcohol from afternoon. All for free.
-Breakfast nibbles at the bar and open buffet food was available for lunch and dinner, which was all local high quality and tastiy food. And again all for free. 
+There was a bar with unlimited soft drinks and caffeine all day and alcohol from the afternoon, acting as a catalyst for networking.
+Breakfast nibbles at the bar and open buffet food were available for lunch and dinner, all local high quality and tastiy food. And again all for free. 
 
 Also in the 3 partys we attended, there again unlimitied free food and alcohol. I tried caviar for the first time in one of these events. 
 
