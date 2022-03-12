@@ -33,3 +33,26 @@ This section is inspired by the wallet integration I have already done on the NF
 
 Run this long commad to install all the dependencies in one go.
 `npm i @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-wallets`
+
+### Copy Pasta my existed code
+
+Didnt work, and I remembered where I got the example from had a TS version of the same code
+
+### Copy pasta the documentation
+
+[I copied the example in the Solana labs wallet adapter page exactly](https://solana-labs.github.io/wallet-adapter/)
+
+This didnt work either
+
+### Fixing Vite compability issues
+
+Given that Vite is being lean it doesnt have many of the features that webpack has. First `global` was undefined, and because that is used by the wallet, app was crashing. Adding ...
+
+```define: {
+    global: {},
+  },
+```
+
+... to the `vite.config.ts` file solved this problem.
+
+Then the documentation was importing `@solana/wallet-adapter-react-ui/styles.css` using `require`, which was again `undefined`. Converting this to a simple `import` solved this issue, and it all worked.
