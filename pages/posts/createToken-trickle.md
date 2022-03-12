@@ -56,3 +56,27 @@ Given that Vite is being lean it doesnt have many of the features that webpack h
 ... to the `vite.config.ts` file solved this problem.
 
 Then the documentation was importing `@solana/wallet-adapter-react-ui/styles.css` using `require`, which was again `undefined`. Converting this to a simple `import` solved this issue, and it all worked.
+
+### Vite issues when building
+
+Given that I have just vitnesed that the wallet adapter is not as easily compatible with Vite, I sensed that the build step is also probably going to have some issues. I came across few so far:
+
+1. **Some node modules librarys were not in TS:** So I modified the `tsconfig.json` file to by changing the `"skipLibCheck"` to false`false`
+
+2. **[commonjs] Complex binding patterns require an initialization value:** This is pointing to a blockchain library that solana wallet adapter uses. Still not sure what the solution or the issue is ...
+
+```
+vite v2.8.6 building for production...
+✓ 184 modules transformed.
+[commonjs] Complex binding patterns require an initialization value (1:6) in /token-trickle/node_modules/@blocto/sdk/dist/blocto-sdk.module.js
+file: /token-trickle/node_modules/@blocto/sdk/dist/blocto-sdk.module.js:1:6
+1: var global$1 = (typeof global !== "undefined" ? global :
+         ^
+2:   typeof self !== "undefined" ? self :
+3:   typeof window !== "undefined" ? window : {});
+error during build:
+SyntaxError: Complex binding patterns require an initialization value (1:6)
+
+```
+
+I might take a walk :D 
