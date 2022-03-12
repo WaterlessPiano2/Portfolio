@@ -25,7 +25,7 @@ require('@solana/wallet-adapter-react-ui/styles.css')
 
 const Wallet = ({ nfts }) => {
   // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
-  const network = WalletAdapterNetwork.mainnet-beta
+  const network = WalletAdapterNetwork['mainnet-beta']
   // The network can be set to 'devnet', 'testnet', or 'mainnet-beta'.
 
   // You can also provide a custom RPC endpoint.

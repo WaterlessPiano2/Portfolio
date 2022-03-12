@@ -63,7 +63,7 @@ const PublicKeyInput = ({ nfts }) => {
       </label>
       <input
         disabled={status === 'LOADING'}
-        class="submit"
+        className="submit"
         type="submit"
         value="Submit"
       />
