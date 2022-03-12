@@ -12,7 +12,7 @@ I had to do this and got a bit confused in the process, so I took notes here, in
 
 If you are unsure of what a command does just add `--help` after it without any inputs. Also use `--verbose` when runing the commands to get more information.
 
-1. Create a wallet with publick and private keys
+1. Create a wallet with public and private keys and then send 0.01 Sol to this wallet
 
 ```
    input -> solana-keygen new --force
