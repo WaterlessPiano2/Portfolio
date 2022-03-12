@@ -59,7 +59,7 @@ Then the documentation was importing `@solana/wallet-adapter-react-ui/styles.css
 
 ### Vite issues when building
 
-Given that I have just vitnesed that the wallet adapter is not as easily compatible with Vite, I sensed that the build step is also probably going to have some issues. I came across few so far:
+Given that I have just vitnesed that the wallet adapter is not as easily compatible with Vite, I sensed that the build step is also probably going to have some issues. I rather solve these build issues earlier rather than later, as less code means there is less possible places the code can be broke form. I came across few issues so far:
 
 1. **Some node modules librarys were not in TS:** So I modified the `tsconfig.json` file to by changing the `"skipLibCheck"` to false`false`
 
@@ -79,4 +79,12 @@ SyntaxError: Complex binding patterns require an initialization value (1:6)
 
 ```
 
-I might take a walk :D 
+I believe the issue is similar to earlier where the global is not defined when using Vite, unlike with webpack it is.
+
+**What I tried so far**
+
+1. Googled alot and clicked on pretty much every link, but it looks like not many people had this error before.
+2. define `$global` like I defined `glonbal` in `vite.config.ts`.
+3. Deploy using Vercel, incase there is an issue wit my machine
+4. Stack overflow is down :facepalm
+5. [Trying to provide custom build configuration now](https://github.com/solana-labs/wallet-adapter/blob/master/FAQ.md#babel--rollup--vite--snowpack--esbuild)
