@@ -1,6 +1,6 @@
 ---
 title: Create Solana tokens on command line
-date: 2022/3/13
+date: 2022/3/12
 description: I recently learned this so I would like to share
 tag: Solana
 author: You

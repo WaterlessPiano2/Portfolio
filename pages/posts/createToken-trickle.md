@@ -1,6 +1,6 @@
 ---
 title: Create token-trickle site
-date: 2022/3/12
+date: 2022/3/13
 description: My journey coding this as I go along
 tag: Solana
 author: You
