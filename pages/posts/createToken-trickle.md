@@ -112,3 +112,6 @@ I start by getting this token so I can select what token to trickle to another w
 I Googled and found nothing to help, then I searched on Github and [came across this `getTokenAccountsByOwner`](https://github.com/jayito/Solana-Get-tokens/blob/3d4dd309e20e557767e789063e4b91159105be9a/src/App.js#L24) which how I will implement this feature. 
 
 [Reading more about `getTokenAccountsByOwner` in the docs ...](https://docs.solana.com/developing/clients/jsonrpc-api#gettokenaccountsbyowner)
+
+### More issues with Vite compatibility
+Again buffer is undefined somewhere, I give up with vite for now, already wasted enough time on debuggig Vite, I will port my changes over to a create reat app.
