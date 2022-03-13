@@ -79,12 +79,14 @@ SyntaxError: Complex binding patterns require an initialization value (1:6)
 
 ```
 
-I believe the issue is similar to earlier where the global is not defined when using Vite, unlike with webpack it is.
+I believe the issue is similar to earlier where the [global][https://nodejs.org/docs/latest/api/globals.html#global-objects] is not defined when using Vite because it is part of [Node's built in functions called Commonjs](https://nodejs.org/docs/latest/api/modules.html#modules-commonjs-modules), unlike with webpack it is.
 
 **What I tried so far**
 
 1. Googled alot and clicked on pretty much every link, but it looks like not many people had this error before.
-2. define `$global` like I defined `glonbal` in `vite.config.ts`.
+2. define `$global` like I defined `glonbal` in `vite.config.ts`
 3. Deploy using Vercel, incase there is an issue wit my machine
-4. Stack overflow is down :facepalm
+4. Stack overflow is down
 5. [Trying to provide custom build configuration now](https://github.com/solana-labs/wallet-adapter/blob/master/FAQ.md#babel--rollup--vite--snowpack--esbuild)
+6. Tryed setting [`ignoreGLobal` flag](https://github.com/rollup/plugins/tree/master/packages/commonjs#ignoreglobal) in [vite config `build.commonjsOptions` ](https://vitejs.dev/config/#build-commonjsoptions)
+7. Adding an alias to `"global$1" = "global"` in `vite.config.js`
