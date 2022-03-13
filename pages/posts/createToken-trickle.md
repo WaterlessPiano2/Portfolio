@@ -105,3 +105,10 @@ I realised this is another node built in feature that is not available in browse
 I continued searching on vite issues, and [I tried using pre built version of the breaking package](https://github.com/vitejs/vite/issues/5970), then tried few of the other node polyfill solutions I tried with the previous problem, but none worked.
 
 Then [I installed buffer package, and added it to the entry point of the project](https://github.com/vitejs/vite/discussions/3126#discussioncomment-2349415) and built project started working fine
+
+## Getting tokens
+I start by getting this token so I can select what token to trickle to another wallet. 
+
+I Googled and found nothing to help, then I searched on Github and [came across this `getTokenAccountsByOwner`](https://github.com/jayito/Solana-Get-tokens/blob/3d4dd309e20e557767e789063e4b91159105be9a/src/App.js#L24) which how I will implement this feature. 
+
+[Reading more about `getTokenAccountsByOwner` in the docs ...](https://docs.solana.com/developing/clients/jsonrpc-api#gettokenaccountsbyowner)
