@@ -83,7 +83,7 @@ SyntaxError: Complex binding patterns require an initialization value (1:6)
 
 I believe the issue is similar to earlier where the [global][https://nodejs.org/docs/latest/api/globals.html#global-objects] is not defined when using Vite because it is part of [Node's built in functions called Commonjs](https://nodejs.org/docs/latest/api/modules.html#modules-commonjs-modules), unlike with webpack it is.
 
-**What I tried so far**
+**What I have tried so far?**
 
 1. Googled alot and clicked on pretty much every link, but it looks like not many people had this error before.
 2. define `$global` like I defined `glonbal` in `vite.config.ts`
@@ -92,3 +92,16 @@ I believe the issue is similar to earlier where the [global][https://nodejs.org/
 5. [Trying to provide custom build configuration now](https://github.com/solana-labs/wallet-adapter/blob/master/FAQ.md#babel--rollup--vite--snowpack--esbuild)
 6. Tryed setting [`ignoreGLobal` flag](https://github.com/rollup/plugins/tree/master/packages/commonjs#ignoreglobal) in [vite config `build.commonjsOptions` ](https://vitejs.dev/config/#build-commonjsoptions)
 7. Adding an alias to `"global$1" = "global"` in `vite.config.js`
+
+**What fixed the build issue?**
+Started researching in Vite issues. [This issue/solution helped me.](https://github.com/vitejs/vite/issues/7257#issuecomment-1066064513). I had to update `define: { global: {}, }` to `define: { global: "globalThis", }`. Then the build managed to complete with no more errors.
+
+Then when I tried to run the built project I got the error `ReferenceError: Buffer is not defined`, so back to drawing board ...
+
+**What fixed the runing the built files issue?**
+
+I realised this is another node built in feature that is not available in browser, just like global. So this is the same issue... I feel like there will be more of these issues when I start importing more packages.
+
+I continued searching on vite issues, and [I tried using pre built version of the breaking package](https://github.com/vitejs/vite/issues/5970), then tried few of the other node polyfill solutions I tried with the previous problem, but none worked.
+
+Then [I installed buffer package, and added it to the entry point of the project](https://github.com/vitejs/vite/discussions/3126#discussioncomment-2349415) and built project started working fine
