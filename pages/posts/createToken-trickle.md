@@ -8,6 +8,8 @@ author: You
 
 # Create token-trickle site
 
+Token Trickle will enable users to send Solana tokens to another users wallets overtime in a given rate, automatically.
+
 ## Init
 
 Chose Vite and react-ts for this project `npm create vite@latest tokenTrickle -- --template react-ts`.
