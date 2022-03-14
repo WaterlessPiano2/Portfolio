@@ -67,4 +67,14 @@ HD4wGTJA2HdzDVFqUqwtkvZKE1JJ9NeL8HZxr7Y7uVvG 1000000
 
 9. Repeat step 4 and confirm that you cannot mint anymore of these tokens
 
+## Note
+
+To work on dev net, use:
+
+`solana config set --url https://api.devnet.solana.com`
+
+To work on main net, use:
+
+`solana config set --url https://api.mainnet-beta.solana.com `
+
 Thats all. If someone else reads this and has some feedback, contact me.

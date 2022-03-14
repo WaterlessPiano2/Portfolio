@@ -34,7 +34,7 @@ This section is inspired by the wallet integration I have already done on the NF
 ### NPM install dependencies
 
 Run this long commad to install all the dependencies in one go.
-`npm i @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-wallets`
+`npm i @solana/wallet-adapter-base @solana/wallet-adapter-react @solana/wallet-adapter-react-ui @solana/wallet-adapter-wallets @solana/spl-token`
 
 ### Copy Pasta my existed code
 
@@ -50,7 +50,8 @@ This didnt work either
 
 Given that Vite is being lean it doesnt have many of the features that webpack has. First `global` was undefined, and because that is used by the wallet, app was crashing. Adding ...
 
-```define: {
+```
+define: {
     global: {},
   },
 ```
@@ -65,7 +66,7 @@ Given that I have just vitnesed that the wallet adapter is not as easily compati
 
 1. **Some node modules librarys were not in TS:** So I modified the `tsconfig.json` file to by changing the `"skipLibCheck"` to false`false`
 
-2. **[commonjs] Complex binding patterns require an initialization value:** This is pointing to a blockchain library that solana wallet adapter uses. Still not sure what the solution or the issue is ...
+2. **[commonjs] Complex binding patterns require an initialization value:** This is coming from to a blockchain library that solana wallet adapter uses. Still not sure what the solution or the issue is ...
 
 ```
 vite v2.8.6 building for production...
@@ -121,3 +122,16 @@ Again buffer is undefined somewhere, I give up with vite for now, already wasted
 ## Conclusion
 
 There is a reason every one using the same tech stack to integrate with Solana, if you wanna work with cutting edge tech then prepare to do the extra work that this comes with.
+
+### Update 1
+
+Latest create react app also had the same issues from the start. So I am jumping on to Next js.
+
+### Update 2
+
+All went smoothly, when using Next js, untill I got to the same spot where I got stuck with Vite. Using Yarn fixed it. and carrying on
+
+
+### Update 3
+
+I can get all the Tokens public keys  but not sure how to get all the mint addressrs
