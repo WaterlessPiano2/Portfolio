@@ -3,7 +3,7 @@ title: Markdown Examples
 date: 2022/2/19
 description: View examples of all possible Markdown options.
 tag: web development
-author: You
+author: Markdown
 ---
 
 # Markdown Examples

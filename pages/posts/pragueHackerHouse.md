@@ -3,7 +3,7 @@ title: Prague hacker house - Solana
 date: 2022/03/06
 description: An amazing week of learnign, coding and networking
 tag: web development
-author: You
+author: Chad
 ---
 
 # Solana hacker house - Prague

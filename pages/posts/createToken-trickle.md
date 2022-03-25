@@ -3,7 +3,7 @@ title: Create token-trickle site
 date: 2022/3/13
 description: My journey coding this as I go along
 tag: Solana
-author: You
+author: Chad
 ---
 
 # Create token-trickle site
@@ -131,7 +131,6 @@ Latest create react app also had the same issues from the start. So I am jumping
 
 All went smoothly, when using Next js, untill I got to the same spot where I got stuck with Vite. Using Yarn fixed it. and carrying on
 
-
 ### Update 3
 
-I can get all the Tokens public keys  but not sure how to get all the mint addressrs
+I can get all the Tokens public keys but not sure how to get all the mint addressrs

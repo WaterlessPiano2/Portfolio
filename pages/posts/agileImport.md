@@ -3,7 +3,7 @@ title: Agile Import, My first founder journey
 date: 2022/2/26
 description: What happend behind the scenes with Agile Import development.
 tag: web development
-author: You
+author: Chad
 ---
 
 # Agile Import - My first founder journey
