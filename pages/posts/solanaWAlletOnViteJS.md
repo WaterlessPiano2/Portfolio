@@ -1,14 +1,14 @@
 ---
-title: Create token-trickle site
+title: My struggles at creating a Solana token display/trade site with ViteJs
 date: 2022/3/13
 description: My journey coding this as I go along
 tag: Solana
 author: Chad
 ---
 
-# Create token-trickle site
+# Creating Solana token display/trade site with ViteJs
 
-Token Trickle will enable users to send Solana tokens to another users wallets overtime in a given rate, automatically.
+This is apage where users can connect their wallets and view the tokens they have init. I decided to go against the mnorm and use ViteJS and it has not been a good experience. In this article I wrote each title for each commit I made, so I am always oblivious of the next struggle I am going to face. I eventually fail to make this work but atleast I now know not to use VueJS or other cutting edge tech for my Solana projects.
 
 ## Init
 
@@ -134,3 +134,7 @@ All went smoothly, when using Next js, untill I got to the same spot where I got
 ### Update 3
 
 I can get all the Tokens public keys but not sure how to get all the mint addressrs
+
+### update 4
+
+Everything worked on Next JS ...
