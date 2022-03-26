@@ -1,29 +1,40 @@
 ---
-title: My struggles at creating a Solana token display/trade site with ViteJs
-date: 2022/3/13
+title: Creating a Next, Tailwind CSS, TypeScript and Solana Wallet Template
+date: 2022/3/26
 description: My journey coding this as I go along
 tag: Solana
 author: Chad
 ---
 
-# Creating Solana token display/trade site with ViteJs
+# Creating a Next, Tailwind CSS, TypeScript and Solana Wallet Template
 
-This is a page where users can connect their wallets and view the tokens they have init. I decided to go against the mnorm and use ViteJS and it has not been a good experience. In this article I wrote each title for each commit I made, so I am always oblivious of the next struggle I am going to face. I eventually fail to make this work but atleast I now know not to use VueJS or other cutting edge tech for my Solana projects.
+I have a few project ideas that I would like to build. They will all use the same tech stack in the front end. I might aswell build this and have some okay styling to go with it. So I can quickly be up and runing with the next project.
 
 ## Init
 
-Chose Vite and react-ts for this project `npm create vite@latest tokenTrickle -- --template react-ts`.
+Chose Next and for this project `npx create-next-app --example with-typescript with-typescript-app`.
 
-[I used Vite site to set this up.](https://vitejs.dev/guide/#trying-vite-online)
-I chose Vite as I wanted to try it out, it has a very lean boiler plate, compared to NextJS or create-react-app.
+[I used Next docs for TS to initialise the project.](https://github.com/vercel/next.js/blob/canary/docs/basic-features/typescript.md)
+I chose Next as it worked reliably for me before, and I am pretty experienced with it, so it should be pretty smooth ride 🤞.
 
 ## Adding Tailwind
 
 I feel naked without some styling, and without a designer and a design template, I prefer to utilise Tailwinds premade styling guide.
 
-[I used Tailwind site to set this up.](https://tailwindcss.com/docs/guides/vite)
+[I used Tailwind site to set this up.](https://tailwindcss.com/docs/guides/nextjs)
 
-I styled the count button first to make sure Tailwind is installed properly.
+Aththe end I had to create a file called `_app.tsx` inside the pages folder, and add the following code to it to work.
+
+```
+import "../styles/globals.css";
+
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
+}
+
+```
+
+Then Tailwind CSS started working. [Here is the whole commit that it took me to set this up.](https://github.com/WaterlessPiano2/Solana-Next-TS-Tailwind-Template/commit/ae965021e1e1ca3b4e1319081f2db77658592d6c)
 
 ## Adding the wallet
 
