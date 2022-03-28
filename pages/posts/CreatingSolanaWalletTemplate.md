@@ -70,7 +70,17 @@ I have tried to change NPM to Yarn, which didnt work. I installed `buffer` and `
 
 I then bumped the version of the typescript installed on the project and it all worked.
 
-I moved the wallet adapter to the `_app.tsx` so the wallet can be accessesd from anywhere in the app easily, rather than having to squeeze everything in the same component.
+### Moved the wallet to upper level
+
+I moved the wallet adapter to the `_app.tsx` so the wallet can be accessesd from anywhere in the app easily, rather than having to squeeze everything in the same component. I did this by copy pasting every thing in the Wallet component in to the '\_app.tsx'. I kept the component declarartion and style imports the same as before. I copied the old return statement in to where the below part was.
+
+```
+<WalletMultiButton />
+<WalletDisconnectButton />
+{ /* Your app's components go here, nested within the context providers. */ }
+```
+
+Now I can the wallet buttons and details, anywhere in the app.
 
 ### Fetch tokens mint and amount
 
