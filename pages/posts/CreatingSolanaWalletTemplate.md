@@ -85,7 +85,10 @@ Now I can the wallet buttons and details, anywhere in the app.
 ### Fetch tokens mint and amount
 
 1. Made a tokens list cpmponent by basically copy pasting the users folder and index file in it. 
-
+2. Get public key from wallet, when public key exists a function that fetches the tokens get triggered
+3. Using `getParsedTokenAccountsByOwner` to fetch tokens
+4. Loop through the data we want to diplay and append it in to an object then push it in to array of tokens.
+5. save the tokens array in the react state, and pass this date in to HTML to display it. 
 
 ### Fetch tokens logo and name
 
