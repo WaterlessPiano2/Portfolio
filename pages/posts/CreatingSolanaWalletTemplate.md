@@ -84,7 +84,8 @@ Now I can the wallet buttons and details, anywhere in the app.
 
 ### Fetch tokens mint and amount
 
-WIP
+1. Made a tokens list cpmponent by basically copy pasting the users folder and index file in it. 
+
 
 ### Fetch tokens logo and name
 
