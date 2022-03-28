@@ -67,3 +67,17 @@ Type error: Property or signature expected.
 I have tried to change NPM to Yarn, which didnt work. I installed `buffer` and `@solana/buffer-layout` as I seemd to have fixed similar issue like this before. These didnt work either.
 
 I then bumped the version of the typescript installed on the project and it all worked.
+
+I moved the wallet adapter to the `_app.tsx` so the wallet can be accessesd from anywhere in the app easily, rather than having to squeeze everything in the same component.
+
+### Fetch tokens mint and amount
+
+### Fetch tokens logo and name
+
+### Display the tokens
+
+### Send tokens
+
+### Toggle for dev or main net
+
+## Fetch and display NFTs
