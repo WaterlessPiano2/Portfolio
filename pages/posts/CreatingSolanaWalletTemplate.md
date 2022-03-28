@@ -6,6 +6,8 @@ tag: Solana
 author: Chad
 ---
 
+**Git repository:** [Next, Tailwind CSS, TypeScript and Solana Wallet Git repository ](https://github.com/WaterlessPiano2/Solana-Next-TS-Tailwind-Template)
+
 # Creating a Next, Tailwind CSS, TypeScript and Solana Wallet Template
 
 I have a few project ideas that I would like to build. They will all use the same tech stack in the front end. I might aswell build this and have some okay styling to go with it. So I can quickly be up and runing with the next project.
@@ -72,12 +74,22 @@ I moved the wallet adapter to the `_app.tsx` so the wallet can be accessesd from
 
 ### Fetch tokens mint and amount
 
+WIP
+
 ### Fetch tokens logo and name
+
+WIP
 
 ### Display the tokens
 
+WIP
+
 ### Send tokens
+
+WIP
 
 ### Toggle for dev or main net
 
-## Fetch and display NFTs
+WIP
+
+**Git repository:** [Next, Tailwind CSS, TypeScript and Solana Wallet Git repository ](https://github.com/WaterlessPiano2/Solana-Next-TS-Tailwind-Template)
