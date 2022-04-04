@@ -6,7 +6,9 @@ tag: Solana
 author: Chad
 ---
 
-**Git repository:** [Next, Tailwind CSS, TypeScript and Solana Wallet Git repository ](https://github.com/WaterlessPiano2/Solana-Next-TS-Tailwind-Template)
+**Git repository:** https://github.com/WaterlessPiano2/Solana-Next-TS-Tailwind-Template
+
+**Demo Page:** https://solana-next-ts-tailwind-template.vercel.app/
 
 # Creating a Next, Tailwind CSS, TypeScript and Solana Wallet Template
 
@@ -90,6 +92,10 @@ Now I can the wallet buttons and details, anywhere in the app.
 4. Loop through the data we want to diplay and append it in to an object then push it in to array of tokens.
 5. save the tokens array in the react state, and pass this date in to HTML to display it.
 
+### Toggle for dev or main net
+
+WIP
+
 ### Fetch tokens logo and name
 
 WIP
@@ -102,11 +108,8 @@ WIP
 
 WIP
 
-### Toggle for dev or main net
-
-WIP
-
 **Nice to haves**
+... or good first issues
 
 - have a public key input field along with wallet, for getting tokens.
 - disable tokens button on the layout when wallet is not connected
@@ -116,3 +119,5 @@ WIP
 - have states for token display: Idle, Loading, Success, Error.
 
 **Git repository:** [Next, Tailwind CSS, TypeScript and Solana Wallet Git repository ](https://github.com/WaterlessPiano2/Solana-Next-TS-Tailwind-Template)
+
+**Demo Page:** https://solana-next-ts-tailwind-template.vercel.app/
