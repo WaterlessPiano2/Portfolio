@@ -42,3 +42,19 @@ In a nutshell, computation gets done by a single big node called a proofer rathe
 In Cairo (The programming language used to implement Starknet ZK-Rollup smart contracts), you can write software to ensure a program is executed correctly.
 
 An example is: if we had to implement a game that runs entirely on the Ethereum blockchain, that would have cost us soo many gas fees because everyone on the chain also had to calculate every single detail of the game. With Starknet ZK-Rollup, only the profer has to do this.
+
+## What is StarkWare?
+
+StarkWare is a company that is established by the inventor of Starks. StarkWare developed a tool to cryptographically prove that you know the solution to a specific problem without actually solving the problem yourself.
+
+- Using this tool StarkWare created Cairo language. Cairo enables you to execute provable computation. Cario is a general-purpose language, not a smart contract language.
+- The proofer will use the code written in Cairo to prove that it did the computation correctly.
+- The verifier also uses Cario code to verify that the computation has been completed correctly.
+
+## StarkEx
+
+StarkEx is an execution engine that helps trade NFTs and ERC-20s. This is like a white label engine for many different projects. The programs are executed off the chain and then proven on the blockchain.
+
+## StarkNet
+
+StarkNet is a network where you can write general-purpose smart contacts about anything.
