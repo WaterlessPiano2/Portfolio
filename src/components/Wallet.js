@@ -48,7 +48,11 @@ const Wallet = ({ nfts }) => {
   )
 
   return (
-    <ConnectionProvider endpoint={endpoint}>
+    <ConnectionProvider
+      endpoint={
+        'https://wandering-spring-bird.solana-mainnet.quiknode.pro/a70f6dd142b7f538028e98ddf31e7a03b09476cb/'
+      }
+    >
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <WalletMultiButton />

@@ -3,7 +3,8 @@ import {
   resolveToWalletAddress,
   getParsedNftAccountsByOwner
 } from '@nfteyez/sol-rayz'
-import { useWallet } from '@solana/wallet-adapter-react'
+
+import { useWallet, useConnection } from '@solana/wallet-adapter-react'
 
 const PublicKeyInput = ({ nfts }) => {
   const [key, setKey] = React.useState(
@@ -11,6 +12,7 @@ const PublicKeyInput = ({ nfts }) => {
   )
   const [status, setStatus] = React.useState('IDLE')
   const { publicKey } = useWallet()
+  const { connection } = useConnection()
 
   React.useEffect(() => {
     if (publicKey) setKey(publicKey.toBase58())
@@ -24,8 +26,10 @@ const PublicKeyInput = ({ nfts }) => {
     const publicAddress = await resolveToWalletAddress({
       text: key
     })
+
     const nftArray = await getParsedNftAccountsByOwner({
-      publicAddress
+      publicAddress,
+      connection
     })
     const metadatas = await fetchMetadata(nftArray)
     setStatus('IDLE')
@@ -35,10 +39,14 @@ const PublicKeyInput = ({ nfts }) => {
   const fetchMetadata = async (nftArray) => {
     let metadatas = []
     for (const nft of nftArray) {
+      console.log(nft)
       await fetch(nft.data.uri)
         .then((response) => response.json())
         .then((meta) => {
           metadatas.push(meta)
+        })
+        .catch((err) => {
+          console.log(err)
         })
     }
     return metadatas
